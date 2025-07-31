@@ -1,0 +1,30 @@
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+# Addition
+addition = a + b
+print(f"Addition: {a} + {b} = {addition}")
+
+# Subtraction
+subtraction = a - b
+print(f"Subtraction: {a} - {b} = {subtraction}")
+
+# Multiplication
+multiplication = a * b
+print(f"Multiplication: {a} * {b} = {multiplication}")
+
+# Division (with check to avoid ZeroDivisionError)
+if b != 0:
+    division = a / b
+    floor_division = a // b
+    modulus = a % b
+    print(f"Division: {a} / {b} = {division}")
+    print(f"Floor Division: {a} // {b} = {floor_division}")
+    print(f"Modulus: {a} % {b} = {modulus}")
+else:
+    print("Division, Floor Division, and Modulus: Cannot divide by zero.")
+
+# Exponentiation
+exponentiation = a ** b
+print(f"Exponentiation: {a} ** {b} = {exponentiation}")
